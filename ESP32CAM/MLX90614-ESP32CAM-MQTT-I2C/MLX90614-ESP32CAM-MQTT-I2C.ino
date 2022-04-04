@@ -21,12 +21,30 @@
 #include <Wire.h>
 
 //Datos de WiFi
-const char* ssid = "AXTEL XTREMO-18D6";  // Aquí debes poner el nombre de tu red
-const char* password = "038C18D6";  // Aquí debes poner la contraseña de tu red
+//const char* ssid = "AXTEL XTREMO-18D6";  // Aquí debes poner el nombre de tu red
+//const char* password = "038C18D6";  // Aquí debes poner la contraseña de tu red
+
+const char* ssid = "MECA-ALEX";
+const char* password = "M3C44L3X2022";
+
+//const char* ssid = "INFINITUMAA9C_2.4";
+//const char* password = "2cERga8H4V";
+
+//const char* ssid = "Ubee74C8-2.4G";
+//const char* password = "5F99F574C8";
 
 //Datos del broker MQTT
-const char* mqtt_server = "192.168.15.29"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
-IPAddress server(192,168,15,29);
+//const char* mqtt_server = "172.17.51.165"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+//IPAddress server(172,17,51,165);
+
+//const char* mqtt_server = "192.168.1.196"; //ESTO Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+//IPAddress server(192,168,1,196);  //ESTO
+
+const char* mqtt_server = "172.17.51.165"; //ESTO Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+IPAddress server(172,17,51,165);  //ESTO
+
+//const char* mqtt_server = "192.168.0.17"; //ESTO Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+//IPAddress server(192,168,0,17);  //ESTO
 
 // Objetos
 WiFiClient espClient; // Este objeto maneja los datos de conexion WiFi
